@@ -43,6 +43,7 @@
       display: flex;
       align-items: center;
       padding: 5px;
+      box-shadow: var(--shadow-elevation-medium);
     }
     .link a {
       color: #72757e;
@@ -60,6 +61,27 @@
     .banner {
       display: flex;
       justify-content: center;
+    }
+    :root {
+      --shadow-color: 226deg 5% 27%;
+      --shadow-elevation-low:
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+        0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
+        1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+      --shadow-elevation-medium:
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+        0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+        2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+        5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+      --shadow-elevation-high:
+        0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
+        1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
+        2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
+        4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
+        7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
+        11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
+        17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
+        25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
     }
   </style>
 </head>
@@ -91,42 +113,42 @@
       </a>
     </div>
     
-    <div class="link">
+    <div class="link shadow">
       <img class="thumbnail"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Botafogo_de_Futebol_e_Regatas_logo.svg/240px-Botafogo_de_Futebol_e_Regatas_logo.svg.png">
     
       <a target="_blank" href="https://camisa7.botafogo.com.br/">Favorite Team: Botafogo</a>
     </div>
     
-    <div class="link">
+    <div class="link shadow">
       <img class="thumbnail" src="https://i.scdn.co/image/ab67616d0000b27357b7f789d328c205b4d15893">
     
       <a target="_blank"
         href="https://open.spotify.com/artist/4NpFxQe2UvRCAjto3JqlSl">Favorite Band: Greta Van Fleet!</a>
     </div>
     
-    <div class="link">
+    <div class="link shadow">
       <img class="thumbnail"
         src="https://i.scdn.co/image/ab67616d0000b273a0fc6fd292bab2be473cbabe">
     
       <a target="_blank" href="https://www.peacocktv.com/watch/asset/movies/drama/the-godfather/d1ed5b6e-2160-399c-99b8-caf5a7702dde?orig_ref=https://www.google.com/">Favorite Movie: The Godfather</a>
     </div>
 
-    <div class="link">
+    <div class="link shadow">
       <img class="thumbnail"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1200px-Breaking_Bad_logo.svg.png">
     
       <a target="_blank" href="https://www.netflix.com/title/70143836">Favorite TV Series: Breaking Bad</a>
     </div>
 
-    <div class="link">
+    <div class="link shadow">
       <img class="thumbnail"
         src="https://awoiaf.westeros.org/images/7/7a/Bookset.jpg">
     
       <a target="_blank" href="https://www.amazon.com/song-ice-fire-Books/s?k=song+of+ice+and+fire&rh=n%3A283155">Favorite Book: A Song of Ice and Fire</a>
     </div>
 
-    <div class="link">
+    <div class="link shadow">
       <img class="thumbnail"
         src="https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png">
     
